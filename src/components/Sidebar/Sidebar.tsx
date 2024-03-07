@@ -28,7 +28,8 @@ export const Sidebar = () => {
     const result: ApiData = await response.json();
     setData(result.record.notes);
   };
-  //Aqui separo en dos useEffect la primera para poder realizar el fetching de datos ni bien se monte el componente
+  //Aqui separo en dos useEffect
+  // La primera para poder realizar el fetching de datos ni bien se monte el componente
   useEffect(() => {
     fetchData();
   }, []);
